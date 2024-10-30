@@ -1,0 +1,43 @@
+<project name="OfficeManagementSystem" default="run" basedir=".">
+    <description>Builds, tests, and runs the project OfficeManagementSystem.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+    <property name="src.dir" value="src/officemanagementsystem"/>
+    <property name="build.dir" value="build"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="main.class" value="officemanagementsystem.OfficeManagementSystem"/>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+            <classpath>
+                <pathelement path="lib/*"/> <!-- Include any necessary libraries -->
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="copy-resources">
+        <mkdir dir="${build.dir}"/>
+        <copy todir="${build.dir}">
+            <fileset dir="src/officemanagementsystem">
+                <include name="**/*.jpg"/> <!-- Include all jpg files -->
+                <include name="**/*.png"/> <!-- Include any additional image types -->
+                <!-- Add any other resource types you might have -->
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="run" depends="compile, copy-resources">
+        <java classname="${main.class}" fork="true">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <pathelement path="lib/*"/> <!-- Include any necessary libraries -->
+            </classpath>
+        </java>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+</project>

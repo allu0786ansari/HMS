@@ -1,0 +1,5 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar" // Include any libraries if you have them in a lib folder
+    ]
+}
