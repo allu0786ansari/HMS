@@ -1,1 +1,2 @@
-# HMS
+# Hospital Management System:
+In this application user can login and book a appointment to visit the doctor, they can describe their illness and book a time slot according to the availability of doctors...
