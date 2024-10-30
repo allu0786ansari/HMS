@@ -29,3 +29,11 @@ In this application user can login and book a appointment to visit the doctor, t
 
 Java
 
+
+## Screenshots
+
+![App Screenshot](https://github.com/allu0786ansari/HMS/blob/main/Screenshot/Screenshot%202024-10-30%20154453.png?raw=true)
+
+![App Screenshot](https://github.com/allu0786ansari/HMS/blob/main/Screenshot/Screenshot%202024-10-30%20154525.png?raw=true)
+
+![App Screenshot](https://github.com/allu0786ansari/HMS/blob/main/Screenshot/Screenshot%202024-10-30%20154543.png?raw=true)
